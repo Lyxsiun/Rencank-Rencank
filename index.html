@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tongkrongan Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="showPage('home')">Beranda</button>
+        <button onclick="showPage('cafe')">Member Bities</button>
+        <button onclick="showPage('warung')">Kedai Si akmal</button>
+    </div>
+
+    <div id="home" class="content">
+        <h1>Tempat Nya Para Pendosa</h1>
+        <p>Kalo Ngumpul Lu Semua Jadi Keren Banget :).</p>
+        <p>☠️</p>
+        <img src="poto/Screenshot_29-8-2024_152739_www.instagram.com.jpeg" width="300px" alt="Cafe Favorit" class="responsive-img">
+    </div>
+
+    <div id="cafe" class="content" style="display: none;">
+        <h1>Runa si monyong</h1>
+        <p>monyong nya menglahkan tapir papua.</p>
+        <img src="poto/run.jpg" width="200px" alt="Cafe Favorit" class="responsive-img">
+        <h1>Rapa starboy A.K.A mukcur</h2>
+        <p>anak si pak tono</p>
+        <img src="poto/rapa.jpg" width="200px" alt="Cafe Favorit" class="responsive-img">
+        <h1>Akmal jida xixixi</h3>
+        <p>barista kedai</p>
+        <img src="poto/akma.jpg" width="200px" alt="Cafe Favorit" class="responsive-img">
+        <h1>Apis pipis</h4>
+        <p>P BALAPPPPP</p>
+        <img src="poto/api.jpg" width="200px" alt="Cafe Favorit" class="responsive-img">
+        <h1>Akmal 2</h4>
+        <p>A.K.A akmal lordddd</p>
+        <img src="poto/IMG-20240711-WA0056.jpg" width="200px" alt="Cafe Favorit" class="responsive-img">
+    </div>
+    
+    <div id="warung" class="content" style="display: none;">
+        <h1>Kedai Si Akmal</h1>
+        <p>Kedai Nya Ada Di Pengayoman Belakang Elpe Elpe Pemuda</p>
+        <p>instagram</p>
+        <p>👇</p>
+        <a href="https://www.instagram.com/kedaikopi.bnb_/" target="_blank">
+            <img src="poto/0a1e6f9872388e41f03f6886654a8235.png" alt="Instagram" style="width:100px;height:100px;">
+        </a>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Sembunyikan semua halaman
+            document.querySelectorAll('.content').forEach(page => page.style.display = 'none');
+            // Tampilkan halaman yang dipilih
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <H1>●SINCE 2023</H1>
+    </div>
+</footer>
+
+
+</html>
